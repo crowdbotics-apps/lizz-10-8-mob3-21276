@@ -26,10 +26,7 @@ export class _Blank extends React.Component {
     TextInput_3: "",
     TextInput_5: "",
     DateTimePicker_7: new Date("10/08/2020"),
-    TextInput_9: "",
-    Switch_10: true,
-    CheckBox_11: true,
-    CheckBox_12: true
+    TextInput_9: ""
   }
 
   render = () => (
@@ -64,31 +61,6 @@ export class _Blank extends React.Component {
         style={styles.TextInput_9}
         value={this.state.TextInput_9}
         onChangeText={nextValue => this.setState({ TextInput_9: nextValue })}
-      />
-      <Switch
-        activeColor="#409EFF"
-        inactiveColor="#C0CCDA"
-        disabled={false}
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
-        style={styles.Switch_10}
-        value={this.state.Switch_10}
-        onValueChange={nextChecked => this.setState({ Switch_10: nextChecked })}
-      />
-      <CheckBox
-        title="Checkbox"
-        disabled={false}
-        containerStyle={styles.CheckBox_11}
-        checked={this.state.CheckBox_11}
-        onPress={nextChecked => this.setState({ CheckBox_11: nextChecked })}
-      />
-      <CheckBox
-        title="Radio button"
-        disabled={false}
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
-        containerStyle={styles.CheckBox_12}
-        checked={this.state.CheckBox_12}
-        onPress={nextChecked => this.setState({ CheckBox_12: nextChecked })}
       />
     </View>
   )
